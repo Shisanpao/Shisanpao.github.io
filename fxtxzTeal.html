@@ -17,7 +17,7 @@
 			var hour = t.getHours();
 			var minute = t.getMinutes();
 			var second = t.getSeconds();
-			var nowDay = hour + ":" + minute + ":" + second;
+			var nowDay = hour + ((minute < 10) ? ":0" : ":") + minute + ((second < 10) ? ":0" : ":") + second;
 			document.write(nowDay);
 
 		</script>
